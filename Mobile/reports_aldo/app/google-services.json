@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911789820108",
+    "project_id": "report-aldo",
+    "storage_bucket": "report-aldo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911789820108:android:468c1abe7f80c22a36da69",
+        "android_client_info": {
+          "package_name": "com.example.reports_aldo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911789820108-et4aulidjgpmt6u2pk3q8t1b836b7s2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0645Mhs-YJ3e2hZA4Q6NL9keCizL_3Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911789820108-et4aulidjgpmt6u2pk3q8t1b836b7s2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

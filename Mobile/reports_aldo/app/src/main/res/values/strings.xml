@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">reports_aldo</string>
+
+    <string-array name="urgency_levels">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

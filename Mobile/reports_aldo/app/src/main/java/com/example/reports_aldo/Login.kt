@@ -29,6 +29,12 @@ class Login : AppCompatActivity() {
         binding.signInLogin.setOnClickListener {
             login()
         }
+        binding.goToSignUp.setOnClickListener{
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
+        }
+
+
 
 //        // Set click listener for the Redirect to Sign-Up text
 //        binding.tvRedirectSignUp.setOnClickListener {
@@ -47,10 +53,13 @@ class Login : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_SHORT).show()
-                // Navigate to the next activity or main activity
+                val intent = Intent(this, LatestReports::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Log In failed", Toast.LENGTH_SHORT).show()
             }
         }
     }
+
+
 }

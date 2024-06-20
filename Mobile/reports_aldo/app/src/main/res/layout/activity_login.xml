@@ -136,10 +136,11 @@
                     android:text="Don't have an account?" />
 
                 <TextView
+                    android:id="@+id/goToSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_weight="0"
-                    android:onClick="goToSignUp"
+                    android:onClick="goToRegister"
                     android:text="Sign Up"
                     android:textColorLink="@color/orange"
                     android:textStyle="bold" />

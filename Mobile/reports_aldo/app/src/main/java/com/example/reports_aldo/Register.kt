@@ -62,7 +62,8 @@ class Register : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
-                finish()
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Sign Up Failed!", Toast.LENGTH_SHORT).show()
             }

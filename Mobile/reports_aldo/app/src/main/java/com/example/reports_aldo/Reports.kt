@@ -87,17 +87,18 @@ class Reports : AppCompatActivity() {
             "imageUrl" to imageUrl,
             "description" to description,
             "urgency" to urgency,
-            "timestamp" to System.currentTimeMillis()
+            "timestamp" to System.currentTimeMillis(),
+            "status" to "not done"  // Add status field with default value
         )
 
         firestore.collection("images")
             .add(data)
             .addOnSuccessListener {
                 Toast.makeText(this, "Upload successful", Toast.LENGTH_SHORT).show()
-                finish()
             }
             .addOnFailureListener {
                 Toast.makeText(this, "Error: ${it.message}", Toast.LENGTH_SHORT).show()
             }
     }
+
 }

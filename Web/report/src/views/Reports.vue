@@ -5,10 +5,10 @@
       <div class="report-info">
         <h2>{{ report.title }}</h2>
         <img :src="report.imageUrl" alt="Report Image" class="report-image">
+      </div>
+      <div class="report-status" >
         <p>{{ report.description }}</p>
         <p><strong>Urgency:</strong> {{ report.urgency }}</p>
-      </div>
-      <div class="report-status">
         <label for="status">Status:</label>
         <select v-model="report.status" @change="updateStatus(index, report)">
           <option value="not done">Not Done</option>

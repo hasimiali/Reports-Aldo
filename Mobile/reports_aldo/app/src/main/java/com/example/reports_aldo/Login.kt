@@ -34,15 +34,6 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-//        // Set click listener for the Redirect to Sign-Up text
-//        binding.tvRedirectSignUp.setOnClickListener {
-//            val intent = Intent(this, SignUpActivity::class.java)
-//            startActivity(intent)
-//            // End the activity
-//            finish()
-//        }
     }
 
     private fun login() {

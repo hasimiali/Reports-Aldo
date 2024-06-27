@@ -5,19 +5,20 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  background-color: #f9f9f9; /* Light gray background for the app */
 }
 
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #007f00; /* Changed to a darker green for better readability */
   transition: 0.4s;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: rgba(0, 127, 0, 0.2); /* Changed to a matching RGBA value for the new green color */
   }
 }
 
@@ -25,11 +26,44 @@ a,
   body {
     display: flex;
     place-items: center;
+    background-color: #f0f0f0; /* Light gray background for the body */
   }
 
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+    gap: 2rem; /* Added gap between the grid columns */
   }
+}
+
+/* Additional styling to ensure consistency */
+body {
+  font-family: 'Arial', sans-serif; /* Set a consistent font-family */
+  color: #333; /* Dark gray text color for better readability */
+  background-color: #ffffff; /* White background for body by default */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000; /* Ensure all headings are black */
+}
+
+p, a {
+  color: #333; /* Dark gray text for paragraphs and links */
+}
+
+button {
+  background-color: #333; /* Dark gray background for buttons */
+  color: #fff; /* White text color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555; /* Slightly lighter gray for hover effect */
 }
